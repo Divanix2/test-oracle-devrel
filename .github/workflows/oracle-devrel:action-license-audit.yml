@@ -36,3 +36,8 @@ jobs:
           echo "\n\nHere is the repolinter_results.json:\n"
           echo $(cat repolinter_results.json)
           exit 0
+
+      - name: print env variable
+        run: |
+          env
+        
